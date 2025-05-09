@@ -14,7 +14,7 @@ import functools
 def parse_arguments() -> argparse.Namespace:
     """Parse command line arguments."""
     parser = argparse.ArgumentParser(description='Image Classification Inference')
-    parser.add_argument('--model_path', type=str, default='best_model.pth', help='path to model weights')
+    parser.add_argument('--model_path', type=str, default='./best_model.pth', help='path to model weights')
     parser.add_argument('--test_dir', type=str, default='./test', help='path to test dataset')
     parser.add_argument('--output_dir', type=str, default='./classified_images', help='path to output directory')
     parser.add_argument('--batch_size', type=int, default=1, help='batch size for inference')
